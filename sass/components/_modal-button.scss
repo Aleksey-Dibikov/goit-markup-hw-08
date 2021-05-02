@@ -1,0 +1,34 @@
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: currentColor;
+
+  &:hover .modal__button__icon,
+  &:focus .modal__button__icon {
+    fill: var(--hover-color);
+  }
+}
+
+.modal__button__icon {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.registration__button {
+  margin-top: 20px;
+}

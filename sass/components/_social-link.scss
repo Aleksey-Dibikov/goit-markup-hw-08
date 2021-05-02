@@ -1,0 +1,27 @@
+.social__icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--title-second-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    fill: var(--title-second-color);
+  }
+}
+
+.social__icons__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}

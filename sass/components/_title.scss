@@ -1,0 +1,55 @@
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 12px;
+}
+
+.title__label {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.title__list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+.title__heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+
+  margin-bottom: 10px;
+}
+
+.footer__title__heading {
+  margin-bottom: 20px;
+  --title-color: var(--title-second-color);
+}
+
+.title__card {
+  padding: 20px 24px;
+  border-left: 1px solid var(--container-border-color);
+  border-right: 1px solid var(--container-border-color);
+  border-bottom: 1px solid var(--container-border-color);
+}
+
+.title__work {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 4px;
+}

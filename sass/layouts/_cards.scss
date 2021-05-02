@@ -1,0 +1,36 @@
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.list__card {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  background-color: var(--title-second-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.developer__names {
+  padding: 30px;
+}
+
+.card__heading {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--title-color);
+}
+
+.profession {
+  margin-bottom: 16px;
+}

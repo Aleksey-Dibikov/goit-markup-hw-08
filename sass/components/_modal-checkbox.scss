@@ -1,0 +1,40 @@
+.lable__mailing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .icon__check {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    background-image: url(../images/icons-svg/modal/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.icon__check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 1px solid var(--title-color);
+  border-radius: 2px;
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__conditions {
+  color: var(--hover-color);
+}

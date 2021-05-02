@@ -1,0 +1,40 @@
+.form__footer {
+  display: inline-flex;
+}
+
+.input__footer {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--title-second-color);
+  background-color: transparent;
+  outline: currentColor;
+}
+
+.button__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--title-second-color);
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.send__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--title-second-color);
+  margin-left: 10px;
+}

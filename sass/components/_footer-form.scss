@@ -1,18 +1,9 @@
 .form__footer {
   display: flex;
-
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
-    display: inline-flex;
     flex-direction: row;
     align-items: stretch;
   }

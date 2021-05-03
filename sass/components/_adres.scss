@@ -6,17 +6,10 @@
 
 .adres__link {
   display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
   padding: 0;
   color: var(--title-second-color);
-
-  @media screen and (min-width: 480px) {
-    justify-content: center;
-    margin-bottom: 8px;
-  }
-
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-  }
 
   @media screen and (min-width: 1200px) {
     justify-content: start;

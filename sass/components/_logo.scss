@@ -1,5 +1,10 @@
 .header__logo {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo-web {
@@ -52,17 +57,9 @@
 
 .footer__logo {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
   --color-logo: var(--title-second-color);
-
-  @media screen and (min-width: 480px) {
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-    margin-bottom: 20px;
-  }
 
   @media screen and (min-width: 1200px) {
     justify-content: start;

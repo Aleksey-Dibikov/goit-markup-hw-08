@@ -4,6 +4,16 @@
   justify-content: center;
 }
 
+.check-in {
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .checkbox {
   position: absolute;
   width: 1px;

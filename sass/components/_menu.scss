@@ -2,6 +2,13 @@
   display: inline-flex;
 }
 
+.connection {
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    padding: 21px 0;
+  }
+}
+
 .menu__item {
   position: relative;
 }
@@ -12,8 +19,10 @@
 
 .menu__link {
   display: flex;
+  padding: 0;
 }
 
 .contacts:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 10px;
 }

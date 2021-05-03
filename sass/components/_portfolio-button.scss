@@ -1,13 +1,28 @@
 .button__nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+  }
 }
 
 .button__item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .list__button {

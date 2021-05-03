@@ -8,13 +8,21 @@
 .description__item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  flex-basis: calc((100% - 1 * 30px) / 1);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .description__item::before {
   display: inline-block;
   content: '';
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;

@@ -21,7 +21,7 @@
 
 .footer__section {
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 45px) / 2);
+    flex-basis: calc(100% / 2);
   }
 
   @media screen and (min-width: 1200px) {

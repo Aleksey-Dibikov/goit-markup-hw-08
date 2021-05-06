@@ -38,9 +38,9 @@
 
   margin-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-  }
+  // @media screen and (min-width: 768px) {
+  //   justify-content: center;
+  // }
 
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
@@ -54,9 +54,6 @@
 
 .title__card {
   padding: 20px 24px;
-  border-left: 1px solid var(--container-border-color);
-  border-right: 1px solid var(--container-border-color);
-  border-bottom: 1px solid var(--container-border-color);
 }
 
 .title__work {

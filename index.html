@@ -79,7 +79,7 @@
 
         <!-- section hero -->
         <section class="hero">
-            <div class="container hero-container">
+            <div class="container">
                 <h1 class="heading">Эффективные решения для вашего бизнеса</h1>
                 <button class="button" type="button" data-modal-open>Заказать услугу</button>
             </div>              
@@ -116,15 +116,21 @@
                 <h2 class="title__list">Чем мы занимаемся</h2>
                 <ul class="list images">
                     <li class="images__item">
-                        <img src="./images/work/box1.jpg" width="370" alt="компьютарные технологии">
+                        <img 
+                        srcset="./images/work/box1.jpg 1x, ./images/work/box1-2x.jpg 2x" 
+                        src="./images/work/box1.jpg" width="370" alt="компьютарные технологии">
                         <p class="work__label">Десктопные приложения</p>
                     </li>
                     <li class="images__item">
-                        <img src="./images/work/box2.jpg" width="370" alt="мобилные приложения">
+                        <img 
+                        srcset="./images/work/box2.jpg 1x, ./images/work/box2-2x.jpg 2x" 
+                        src="./images/work/box2.jpg" width="370" alt="мобилные приложения">
                         <p class="work__label">Мобильные приложения</p>
                     </li>
                     <li class="images__item">
-                        <img src="./images/work/box3.jpg" width="370" alt="планшетная графика">
+                        <img 
+                        srcset="./images/work/box3.jpg 1x, ./images/work/box3-2x.jpg 2x"  
+                        src="./images/work/box3.jpg" width="370" alt="планшетная графика">
                         <p class="work__label">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -137,7 +143,10 @@
                 <h2 class="title__list">Наша команда</h2>
                 <ul class="list team__list">
                     <li class="list__card">
-                        <img src="./images/team/Игорь_Демьяненко.jpg" width="270" alt="фото">
+                        <picture>
+                            <img srcset="./images/team/Igor-Demianenko-1x.jpg 1x, ./images/team/Igor-Demianenko-2x.jpg 2x"
+                                src="./images/team/Igor-Demianenko-1x.jpg" width="450" alt="фото">
+                        </picture>                        
                         <div class="developer__names">
                             <h3 class="card__heading">Игорь Демьяненко</h3>
                             <p class="profession" lang="en">Product Designer</p>
@@ -174,7 +183,10 @@
                         </div>                        
                     </li>
                     <li class="list__card">
-                        <img src="./images/team/Ольга_Репина.jpg" width="270" alt="фото">
+                        <picture>
+                            <img srcset="./images/team/Olga-Repina-1x.jpg 1x, ./images/team/Olga-Repina-2x.jpg 2x"
+                                src="./images/team/Olga-Repina-1x.jpg" width="450" alt="фото">
+                        </picture>                        
                         <div class="developer__names">
                             <h3 class="card__heading">Ольга Репина</h3>
                             <p class="profession" lang="en">Frontend Developer</p>
@@ -211,7 +223,10 @@
                         </div>
                     </li>
                     <li class="list__card">
-                        <img src="./images/team/Николай_Тарасов.jpg" width="270" alt="фото">
+                        <picture>
+                            <img srcset="./images/team/Nikolay-Tarasov-1x.jpg 1x, ./images/team/Nikolay-Tarasov-2x.jpg 2x"
+                                src="./images/team/Nikolay-Tarasov-1x.jpg" width="450" alt="фото">
+                        </picture>                        
                         <div class="developer__names">
                             <h3 class="card__heading">Николай Тарасов</h3>
                             <p class="profession" lang="en">Marketing</p>
@@ -248,7 +263,10 @@
                         </div>                        
                     </li>
                     <li class="list__card">
-                        <img src="./images/team/Михаил_Ермаков.jpg" width="270" alt="фото">
+                        <picture>
+                            <img srcset="./images/team/Mihail-Ermakov-1x.jpg 1x, ./images/team/Mihail-Ermakov-2x.jpg 2x"
+                                src="./images/team/Mihail-Ermakov-1x.jpg" width="450" alt="фото">
+                        </picture>                        
                         <div class="developer__names">
                             <h3 class="card__heading">Михаил Ермаков</h3>
                             <p class="profession" lang="en">UI Designer</p>

@@ -16,7 +16,7 @@
 
 .connection {
   // @media screen and (max-width: 767.98px) {
-  //   // margin-top: 302px;
+  //   margin-top: 302px;
   //   margin-bottom: 64px;
   // }
 
@@ -73,6 +73,7 @@
 }
 
 .phone {
+  width: calc((100% - 1 * 30px) / 1);
   font-size: 34px;
   line-height: 1.18;
   color: var(--hover-color);

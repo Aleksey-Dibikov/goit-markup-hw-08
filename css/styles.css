@@ -99,7 +99,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -122,10 +122,6 @@ img {
   .container {
     max-width: 1200px;
   }
-}
-
-.hero-container {
-  padding: 118px 0;
 }
 
 .button {
@@ -219,6 +215,7 @@ img {
 .mobile-list {
   display: inline-flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .mobile-social {
@@ -318,6 +315,7 @@ img {
 }
 
 .phone {
+  width: calc((100% - 1 * 30px) / 1);
   font-size: 34px;
   line-height: 1.18;
   color: var(--hover-color);
@@ -490,12 +488,6 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .title__heading {
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .title__heading {
     justify-content: flex-start;
@@ -509,9 +501,6 @@ img {
 
 .title__card {
   padding: 20px 24px;
-  border-left: 1px solid var(--container-border-color);
-  border-right: 1px solid var(--container-border-color);
-  border-bottom: 1px solid var(--container-border-color);
 }
 
 .title__work {
@@ -1015,6 +1004,9 @@ img {
   flex-basis: calc((100% - 1 * 30px) / 1);
   background-color: var(--title-second-color);
   box-sizing: border-box;
+  border-left: 1px solid var(--container-border-color);
+  border-right: 1px solid var(--container-border-color);
+  border-bottom: 1px solid var(--container-border-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
@@ -1103,13 +1095,28 @@ img {
 }
 
 .hero {
-  width: 100%;
+  max-width: 100%;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-hero-1x.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .hero {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-hero-2x.jpg);
+  }
 }
 
 .features,

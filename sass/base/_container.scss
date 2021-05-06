@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -16,8 +16,4 @@
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
-}
-
-.hero-container {
-  padding: 118px 0;
 }

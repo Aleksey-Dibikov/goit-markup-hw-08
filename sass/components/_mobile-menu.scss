@@ -69,6 +69,7 @@
 .mobile-list {
   display: inline-flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .mobile-social {

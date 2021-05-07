@@ -36,7 +36,9 @@
 }
 
 .footer__section:not(:last-child) {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__link:not(:last-child) {

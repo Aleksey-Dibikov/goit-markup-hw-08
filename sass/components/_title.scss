@@ -27,7 +27,7 @@
   }
 }
 
-.title__heading {
+.title-heading {
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -38,18 +38,19 @@
 
   margin-bottom: 10px;
 
-  // @media screen and (min-width: 768px) {
-  //   justify-content: center;
-  // }
-
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-start;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
   }
 }
 
-.footer__title__heading {
+.footer__title-heading {
+  justify-content: center;
   margin-bottom: 20px;
   --title-color: var(--title-second-color);
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .title__card {

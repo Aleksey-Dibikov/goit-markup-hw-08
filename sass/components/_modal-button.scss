@@ -14,13 +14,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: currentColor;
 
-  &:hover .modal__button__icon,
-  &:focus .modal__button__icon {
+  &:hover .modal__button--icon,
+  &:focus .modal__button--icon {
     fill: var(--hover-color);
   }
 }
 
-.modal__button__icon {
+.modal__button--icon {
   width: 18px;
   height: 18px;
   fill: #000000;

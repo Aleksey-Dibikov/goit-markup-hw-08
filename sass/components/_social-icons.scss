@@ -7,7 +7,7 @@
   }
 }
 
-.social__icons__icon {
+.social__icons--icon {
   width: 20px;
   height: 20px;
   fill: var(--color-social__icons);
@@ -20,6 +20,6 @@
   fill: var(--title-second-color);
 }
 
-.social__icons__item:not(:last-child) {
+.social__icons--item:not(:last-child) {
   margin-right: 10px;
 }

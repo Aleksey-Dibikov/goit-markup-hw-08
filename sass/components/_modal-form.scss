@@ -19,13 +19,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover + .registration__form__icon,
-  &:focus + .registration__form__icon {
+  &:hover + .registration__form--icon,
+  &:focus + .registration__form--icon {
     fill: var(--hover-color);
   }
 }
 
-.registration__form__icon {
+.registration__form--icon {
   position: absolute;
   left: 12px;
   bottom: 11px;

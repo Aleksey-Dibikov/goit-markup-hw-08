@@ -1,6 +1,3 @@
-.fb_dialog_content>iframe{
-    
-    &_.document#facebook>body.plugin>div>div>div>div{
-        background-color: red !important;
-    }
+#fb-root.fbBtn>div.fb_dialog>div.fb_dialog_content>iframe{
+    background-color: red !important;
 }

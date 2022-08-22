@@ -526,7 +526,6 @@
 
     <!-- Your Плагин чата code -->
     <div id="fb-customer-chat" class="fb-customerchat"></div>
-
     <script>
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
@@ -540,7 +539,19 @@
           xfbml: true,
           version: 'v14.0',
         })
+        FB.api(
+          'https://graph.facebook.com/v14.0/PAGE-ID/chat_plugin?welcome_screen_greeting:YOUR-WELCOME-TEXT&theme_color:553399&entry_point_icon:#ff0000&entry_point_label:CHAT&access_token=PAGE_ACCESS_TOKEN',
+          function (response) {
+            if (response && !response.error) {
+              console.log('response: ', response)
+            }
+          },
+        )
       }
+
+      // curl -i -X POST(
+      //   'https://graph.facebook.com/v14.0/PAGE-ID/chat_plugin?welcome_screen_greeting:YOUR-WELCOME-TEXT&theme_color:553399&entry_point_icon:MESSENGER_ICON&entry_point_label:CHAT&access_token=PAGE_ACCESS_TOKEN',
+      // )
       ;(function (d, s, id) {
         var js,
           fjs = d.getElementsByTagName(s)[0]
@@ -550,6 +561,7 @@
         js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js'
         fjs.parentNode.insertBefore(js, fjs)
       })(document, 'script', 'facebook-jssdk')
+      console.log(html > body.plugin > div > div > div > div)
     </script>
 
     <script src="./js/modal.js"></script>

@@ -522,10 +522,10 @@
       </div>
     </div>
     <!-- Messenger Плагин чата Code -->
-    <div id="fb-root" class="fbBtn" style="backgroundcolor: #ff0000"></div>
+    <div id="fb-root"></div>
 
     <!-- Your Плагин чата code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div id="fb-customer-chat" class="fb-customerchat" page_id="104227589054932" theme_color="#ff0000"></div>
     <script>
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
@@ -545,7 +545,6 @@
           fjs = d.getElementsByTagName(s)[0]
         if (d.getElementById(id)) return
         js = d.createElement(s)
-        console.log('js: ', js)
         js.id = id
         js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js'
         fjs.parentNode.insertBefore(js, fjs)

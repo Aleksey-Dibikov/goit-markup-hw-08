@@ -540,8 +540,12 @@
           xfbml: true,
           version: 'v14.0',
         })
-        FB.CustomerChat.update({
-          background: red,
+
+        FB.api('/{page-id}/chat_plugin', function (response) {
+          if (response && !response.error) {
+            /* handle the result */
+            console.log('red')
+          }
         })
       }
       ;(function (d, s, id) {
@@ -553,8 +557,6 @@
         js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js'
         fjs.parentNode.insertBefore(js, fjs)
       })(document, 'script', 'facebook-jssdk')
-      console.log('window: ', window)
-      console.log('FB: ', FB)
     </script>
 
     <script src="./js/modal.js"></script>

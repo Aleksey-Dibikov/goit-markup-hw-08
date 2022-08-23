@@ -5,3 +5,10 @@ html>body.plugin>div>div>div>div{
 #fb-customer-chat.theme_color:hover{
     background-color: #ff0000;
 }
+
+.fb_dialog_content>iframe {
+    bottom: 100px !important;
+    right: 23px !important;
+    animation: none !important;
+    visibility: hidden !important;
+}

@@ -549,13 +549,13 @@
         // FB.CustomerChat.update({
         //   theme_color: '#00ff00',
         // })
-        FB.CustomerChat.show({ shouldShowDialog: true })
-        // FB.CustomerChat.hide()
-        // FB.CustomerChat.showDialog()
-        // FB.CustomerChat.hideDialog()
+
+        // FB.CustomerChat.show({ shouldShowDialog: true })
+        FB.CustomerChat.showDialog()
       })
       chatbox.addEventListener('mouseout', function () {
-        FB.CustomerChat.hide()
+        // FB.CustomerChat.hide()
+        FB.CustomerChat.hideDialog()
       })
     </script>
 
@@ -563,7 +563,7 @@
     <script>
       window.fbAsyncInit = function () {
         FB.init({
-          xfbml: !true,
+          xfbml: true,
           version: 'v14.0',
         })
       }

@@ -526,7 +526,7 @@
     <div id="fb-root"></div>
 
     <!-- Your Плагин чата code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <!-- <div id="fb-customer-chat" class="fb-customerchat"></div> -->
 
     <div
       id="fb-my-chat"
@@ -541,14 +541,13 @@
     ></div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat')
+      // var chatbox = document.getElementById('fb-customer-chat')
+      var my_chatbox = document.getElementById('fb-my-chat')
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
       // chatbox.setAttribute('theme_color', '#ff00ff')
       // chatbox.setAttribute('entry_point_icon', 'none')
       // chatbox.setAttribute('entry_point_label', 'chat')
-
-      var my_chatbox = document.getElementById('fb-my-chat')
 
       my_chatbox.addEventListener('click', function () {
         //chatbox.setAttribute('theme_color', '#00ff00')

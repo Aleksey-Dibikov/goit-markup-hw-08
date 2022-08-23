@@ -525,20 +525,18 @@
     <div id="fb-root"></div>
 
     <!-- Your Плагин чата code -->
-    <div
-      id="fb-customer-chat"
-      class="fb-customerchat"
-      page_id="104227589054932"
-      attribution="biz_inbox"
-      theme_color="#ff00ff"
-      entry_point_icon="none"
-      entry_point_label="chat"
-    ></div>
-    <!-- <script>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
-    </script> -->
+      chatbox.setAttribute('theme_color', '#ff00ff')
+      chatbox.setAttribute('entry_point_icon', 'messenger_icon')
+      chatbox.setAttribute('entry_point_label', 'chat')
+      chatbox.addEventListener('mouseover', function (el) {
+        el.setAttribute('theme_color', '#ff0000')
+      })
+    </script>
 
     <!-- Your SDK code -->
     <script>

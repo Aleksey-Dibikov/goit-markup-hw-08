@@ -530,6 +530,10 @@
       class="fb-customerchat"
       entry_point_icon="none"
       entry_point_label="chat"
+      style="display: none"
+    ></div>
+    <div
+      id="fb-my-chat"
       style="
         padding: 10px;
         border: solid 2px red;
@@ -543,10 +547,13 @@
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
-      chatbox.setAttribute('theme_color', '#ff00ff')
+      // chatbox.setAttribute('theme_color', '#ff00ff')
       // chatbox.setAttribute('entry_point_icon', 'none')
       // chatbox.setAttribute('entry_point_label', 'chat')
-      chatbox.addEventListener('mouseover', function () {
+
+      var my_chatbox = document.getElementById('fb-my-chat')
+
+      my_chatbox.addEventListener('mouseover', function () {
         //chatbox.setAttribute('theme_color', '#00ff00')
         // FB.CustomerChat.update({
         //   theme_color: '#00ff00',
@@ -555,7 +562,7 @@
         FB.CustomerChat.show(true)
         // FB.CustomerChat.showDialog()
       })
-      chatbox.addEventListener('mouseout', function () {
+      my_chatbox.addEventListener('mouseout', function () {
         FB.CustomerChat.hide()
         // FB.CustomerChat.hideDialog()
       })

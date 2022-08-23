@@ -521,11 +521,13 @@
         </form>
       </div>
     </div>
+
     <!-- Messenger Плагин чата Code -->
     <div id="fb-root"></div>
 
     <!-- Your Плагин чата code -->
     <div id="fb-customer-chat" class="fb-customerchat"></div>
+
     <div
       id="fb-my-chat"
       style="
@@ -537,10 +539,11 @@
         right: 10px;
       "
     ></div>
+
     <script>
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
-      // chatbox.setAttribute('attribution', 'biz_inbox')
+      chatbox.setAttribute('attribution', 'biz_inbox')
       // chatbox.setAttribute('theme_color', '#ff00ff')
       // chatbox.setAttribute('entry_point_icon', 'none')
       // chatbox.setAttribute('entry_point_label', 'chat')
@@ -557,10 +560,10 @@
         // FB.CustomerChat.hide()
         FB.CustomerChat.showDialog()
       })
-      my_chatbox.addEventListener('click', function () {
-        // FB.CustomerChat.hide()
-        FB.CustomerChat.hideDialog()
-      })
+      // my_chatbox.addEventListener('click', function () {
+      //   // FB.CustomerChat.hide()
+      //   FB.CustomerChat.hideDialog()
+      // })
       console.log('chatbox: ', chatbox)
     </script>
 

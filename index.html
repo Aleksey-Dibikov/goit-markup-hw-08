@@ -522,12 +522,26 @@
       </div>
     </div>
     <!-- Messenger Плагин чата Code -->
-    <div id="fb-root"></div>
+    <div
+      id="fb-root"
+      entry_point_icon="none"
+      entry_point_label="chat"
+      style="
+        padding: 10px;
+        border: solid 2px red;
+        background: blueviolet;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+      "
+    ></div>
 
     <!-- Your Плагин чата code -->
     <div
       id="fb-customer-chat"
       class="fb-customerchat"
+      entry_point_icon="none"
+      entry_point_label="chat"
       style="
         padding: 10px;
         border: solid 2px red;
@@ -542,8 +556,8 @@
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
       chatbox.setAttribute('theme_color', '#ff00ff')
-      chatbox.setAttribute('entry_point_icon', 'none')
-      chatbox.setAttribute('entry_point_label', 'chat')
+      // chatbox.setAttribute('entry_point_icon', 'none')
+      // chatbox.setAttribute('entry_point_label', 'chat')
       chatbox.addEventListener('mouseover', function () {
         //chatbox.setAttribute('theme_color', '#00ff00')
         // FB.CustomerChat.update({
@@ -563,7 +577,7 @@
     <script>
       window.fbAsyncInit = function () {
         FB.init({
-          xfbml: true,
+          xfbml: !true,
           version: 'v14.0',
         })
       }

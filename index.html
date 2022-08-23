@@ -540,8 +540,8 @@
     <div
       id="fb-customer-chat"
       class="fb-customerchat"
-      entry_point_icon="none"
-      entry_point_label="chat"
+      entry_point_icon1="none"
+      entry_point_label1="chat"
       style="
         padding: 10px;
         border: solid 2px red;
@@ -564,12 +564,12 @@
         //   theme_color: '#00ff00',
         // })
 
-        // FB.CustomerChat.show({ shouldShowDialog: true })
-        FB.CustomerChat.showDialog()
+        FB.CustomerChat.show({ shouldShowDialog: true })
+        // FB.CustomerChat.showDialog()
       })
       chatbox.addEventListener('mouseout', function () {
-        // FB.CustomerChat.hide()
-        FB.CustomerChat.hideDialog()
+        FB.CustomerChat.hide()
+        // FB.CustomerChat.hideDialog()
       })
     </script>
 
@@ -577,7 +577,7 @@
     <script>
       window.fbAsyncInit = function () {
         FB.init({
-          xfbml: !true,
+          xfbml: true,
           version: 'v14.0',
         })
       }

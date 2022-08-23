@@ -522,26 +522,14 @@
       </div>
     </div>
     <!-- Messenger Плагин чата Code -->
-    <div
-      id="fb-root"
-      entry_point_icon="none"
-      entry_point_label="chat"
-      style="
-        padding: 10px;
-        border: solid 2px red;
-        background: blueviolet;
-        position: absolute;
-        bottom: 50px;
-        right: 50px;
-      "
-    ></div>
+    <div id="fb-root"></div>
 
     <!-- Your Плагин чата code -->
     <div
       id="fb-customer-chat"
       class="fb-customerchat"
-      entry_point_icon1="none"
-      entry_point_label1="chat"
+      entry_point_icon="none"
+      entry_point_label="chat"
       style="
         padding: 10px;
         border: solid 2px red;
@@ -564,7 +552,7 @@
         //   theme_color: '#00ff00',
         // })
 
-        FB.CustomerChat.show({ shouldShowDialog: true })
+        FB.CustomerChat.show(true)
         // FB.CustomerChat.showDialog()
       })
       chatbox.addEventListener('mouseout', function () {

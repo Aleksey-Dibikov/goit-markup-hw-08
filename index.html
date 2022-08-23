@@ -531,21 +531,28 @@
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
       chatbox.setAttribute('theme_color', '#ff00ff')
-      chatbox.setAttribute('entry_point_icon', 'chat_angular_icon')
+      chatbox.setAttribute('entry_point_icon', 'none')
       chatbox.setAttribute('entry_point_label', 'chat')
-      // chatbox.addEventListener('mouseover', function () {
-      //   //chatbox.setAttribute('theme_color', '#00ff00')
-      //   FB.CustomerChat.update({
-      //     theme_color: '#00ff00',
-      //   })
-      // })
+      chatbox.addEventListener('mouseover', function () {
+        //chatbox.setAttribute('theme_color', '#00ff00')
+        // FB.CustomerChat.update({
+        //   theme_color: '#00ff00',
+        // })
+        FB.CustomerChat.show({ shouldShowDialog: false })
+        // FB.CustomerChat.hide()
+        // FB.CustomerChat.showDialog()
+        // FB.CustomerChat.hideDialog()
+      })
+      chatbox.addEventListener('mouseout', function () {
+        FB.CustomerChat.hide()
+      })
     </script>
 
     <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function () {
         FB.init({
-          xfbml: true,
+          xfbml: !true,
           version: 'v14.0',
         })
       }

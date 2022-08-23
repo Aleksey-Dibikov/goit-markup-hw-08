@@ -557,13 +557,18 @@
 
         // FB.CustomerChat.show(true)
         // FB.CustomerChat.hide()
-        FB.CustomerChat.showDialog()
+        // FB.CustomerChat.showDialog()
+        FB.Event.subscribe('xfbml.render', function () {
+          FB.CustomerChat.show(true)
+          setTimeout(() => {
+            setFbPluginInit(true)
+          }, 1000)
+        })
       })
       // my_chatbox.addEventListener('click', function () {
       //   // FB.CustomerChat.hide()
       //   FB.CustomerChat.hideDialog()
       // })
-      console.log('chatbox: ', chatbox)
     </script>
 
     <!-- Your SDK code -->

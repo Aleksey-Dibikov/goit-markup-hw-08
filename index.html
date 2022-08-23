@@ -544,31 +544,17 @@
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
-      // chatbox.setAttribute('theme_color', '#ff00ff')
-      // chatbox.setAttribute('entry_point_icon', 'none')
-      // chatbox.setAttribute('entry_point_label', 'chat')
 
       var my_chatbox = document.getElementById('fb-my-chat')
       my_chatbox.addEventListener('click', function () {
-        //chatbox.setAttribute('theme_color', '#00ff00')
-        // FB.CustomerChat.update({
-        //   theme_color: '#00ff00',
+        FB.CustomerChat.showDialog()
+        // FB.Event.subscribe('xfbml.render', function () {
+        //   FB.CustomerChat.show(true)
+        setTimeout(() => {
+          setFbPluginInit(true)
+        }, 1000)
         // })
-
-        // FB.CustomerChat.show(true)
-        // FB.CustomerChat.hide()
-        // FB.CustomerChat.showDialog()
-        FB.Event.subscribe('xfbml.render', function () {
-          FB.CustomerChat.show(true)
-          setTimeout(() => {
-            setFbPluginInit(true)
-          }, 1000)
-        })
       })
-      // my_chatbox.addEventListener('click', function () {
-      //   // FB.CustomerChat.hide()
-      //   FB.CustomerChat.hideDialog()
-      // })
     </script>
 
     <!-- Your SDK code -->

@@ -548,12 +548,9 @@
       var my_chatbox = document.getElementById('fb-my-chat')
       my_chatbox.addEventListener('click', function () {
         FB.CustomerChat.showDialog()
-        // FB.Event.subscribe('xfbml.render', function () {
-        //   FB.CustomerChat.show(true)
         setTimeout(() => {
           setFbPluginInit(true)
         }, 1000)
-        // })
       })
     </script>
 

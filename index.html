@@ -544,14 +544,6 @@
       var chatbox = document.getElementById('fb-customer-chat')
       chatbox.setAttribute('page_id', '104227589054932')
       chatbox.setAttribute('attribution', 'biz_inbox')
-
-      var my_chatbox = document.getElementById('fb-my-chat')
-      my_chatbox.addEventListener('click', function () {
-        FB.CustomerChat.showDialog()
-        setTimeout(() => {
-          setFbPluginInit(true)
-        }, 1000)
-      })
     </script>
 
     <!-- Your SDK code -->
